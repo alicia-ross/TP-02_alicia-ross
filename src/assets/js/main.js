@@ -42,6 +42,7 @@ class Card {
         updateText();
 
         // Écouteur d'événement pour mettre à jour le texte lorsque la taille de l'écran change sinon ça ne change pas automatiquement
+        // Je ne suis pas fan de cette technique. J'aurais prefere que tu utilises tailwind
         window.addEventListener('resize', updateText);
 
         div.appendChild(title);
