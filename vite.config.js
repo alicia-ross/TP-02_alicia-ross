@@ -7,7 +7,7 @@ export default {
     rollupOptions: {
         input: {
         index: './src/index.html',
-        chien: './src/chien.html',
+        chien: './src/chiens.html',
         about: './src/apropos.html',
         contact: './src/contact.html',
         }
