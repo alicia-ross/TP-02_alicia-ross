@@ -1,0 +1,8 @@
+{
+"rewrites": [
+    { "source": "/chiens", "destination": "./chiens.html" },
+    { "source": "/about", "destination": "./apropos.html" },
+    { "source": "/contact", "destination": "./contact.html" },
+    { "source": "/(.*)", "destination": "./index.html" }
+]
+}
