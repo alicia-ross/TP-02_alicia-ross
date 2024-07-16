@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script type="module" src="./assets/js/main.js" defer></script>
+    <script type="module" src="./assets/js/newletter.js" defer></script>
+    <script type="module" src="./assets/js/search.js" defer></script>
+    <script type="module" src="./assets/js/dialog.js" defer></script>
+    <title>Chiens - La Maison des Chiens</title>
+</head>
+<body>
+    <header class="bg-beige">
+        <div class="bg-green text-beige py-2 text-center shadow-md">
+            <p>Frais d'adoption réduit jusqu'au 15 juillet</p>
+        </div>
+        <div class="flex justify-between items-center px-4 py-3 border-b-[3px] border-green">
+            <i class="fas fa-bars text-2xl text-gray lg:hidden hover:text-green"></i>
+            <nav class="hidden lg:flex flex-1">
+                <ul class="flex flex-row gap-6 text-lg p-3">
+                    <li><a href="./index.html" class="text-gray hover:text-green">Accueil</a></li>
+                    <li><a href="./chiens.html" class="text-gray hover:text-green">Chiens</a></li>
+                    <li><a href="./apropos.html" class="text-gray hover:text-green">À Propos</a></li>
+                    <li><a href="./contact.html" class="text-gray hover:text-green">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="absolute left-1/2 transform -translate-x-1/2 flex items-center justify-center px-3">
+                <img class="w-[240px] lg:w-[300px]" src="./assets/img/Capture d’écran 2024-07-09 211320.png" alt="Logo de la maison des chiens">
+            </div>
+            <i class="fas fa-search text-xl text-gray hover:text-green"></i>
+        </div>
+        <div class="mt-4 flex flex-col justify-center items-center pt-20 gap-8">
+            <h1 class="text-3xl font-extrabold lg:text-5xl text-center">Découvrez les chiens en adoption</h1>
+            <p class="mt-4 mx-8 text-lg text-center">Explorez notre sélection de chiens adorables prêts à trouver leur foyer pour toujours. Chaque chien a une histoire unique et attend avec impatience de rencontrer sa nouvelle famille. Trouvez votre compagnon idéal et changez une vie aujourd'hui en optant pour l'adoption.</p>
+        </div>
+    </header>
+    <main class="py-5 min-h-screen">
+        <section class="p-5 bg-beige">
+            <input type="text" id="search-input" placeholder="Filtrer" class="p-2 text-gray rounded border border-gray-600 focus:outline-none focus:ring-2 focus:ring-gray">
+            <div  id="grid-container"  class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-5 pt-10">
+                <div class="flex flex-col justify-center items-center gap-2 bg-lightgreen p-5 card" data-search="M Mâle 1 ans">
+                    <img src="https://lespattesjaunes.com/wp-content/uploads/2024/06/plumeau-site-800x800-1.jpg" alt="">
+                    <h3 class="text-2xl font-bold mt-4 card-title" data-search="Marley">Marley</h3>
+                    <p>Mâle</p>
+                    <p>1 ans</p>
+                    <button class=" btn-en-savoir-plus text-lg px-6 py-3 w-full bg-green text-beige rounded shadow-lg hover:bg-darkgreen transition duration-300 ease-in-out transform hover:scale-105">En savoir plus</button>
+                </div>
+                <div class="flex flex-col justify-center items-center gap-2 bg-lightgreen p-5 card" data-search="F Femelle 7 ans">
+                    <img src="https://spcasaguenay.com/wp-content/uploads/2024/06/lily-site-800x800.jpg" alt="">
+                    <h3 class="text-2xl font-bold mt-4 card-title" data-search="Suki">Suki</h3>
+                    <p>Femelle</p>
+                    <p>7 ans</p>
+                    <button class=" btn-en-savoir-plus text-lg px-6 py-3 w-full bg-green text-beige rounded shadow-lg hover:bg-darkgreen transition duration-300 ease-in-out transform hover:scale-105">En savoir plus</button>
+                </div>
+                <div class="flex flex-col justify-center items-center gap-2 bg-lightgreen p-5 card" data-search="F Femelle 2 ans">
+                    <img src="https://spcasaguenay.com/wp-content/uploads/2024/07/Fiona-site-800x800.jpg" alt="">
+                    <h3 class="text-2xl font-bold mt-4 card-title" data-search="Luna">Luna</h3>
+                    <p>Femelle</p>
+                    <p>2 ans</p>
+                    <button class=" btn-en-savoir-plus text-lg px-6 py-3 w-full bg-green text-beige rounded shadow-lg hover:bg-darkgreen transition duration-300 ease-in-out transform hover:scale-105">En savoir plus</button>
+                </div>
+                <div class="flex flex-col justify-center items-center gap-2 bg-lightgreen p-5 card" data-search="M Mâle 8 ans">
+                    <img src="https://spcasaguenay.com/wp-content/uploads/2024/07/Paulo-site-800x800.jpg" alt="">
+                    <h3 class="text-2xl font-bold mt-4 card-title" data-search="Zuko">Zuko</h3>
+                    <p>Mâle</p>
+                    <p>8 ans</p>
+                    <button class=" btn-en-savoir-plus text-lg px-6 py-3 w-full bg-green text-beige rounded shadow-lg hover:bg-darkgreen transition duration-300 ease-in-out transform hover:scale-105">En savoir plus</button>
+                </div>
+                <div class="flex flex-col justify-center items-center gap-2 bg-lightgreen p-5 card" data-search="M Mâle 3 ans">
+                    <img src="https://spcasaguenay.com/wp-content/uploads/2024/07/kaman-800x800.jpg" alt="">
+                    <h3 class="text-2xl font-bold mt-4 card-title" data-search="Coco">Coco</h3>
+                    <p>Mâle</p>
+                    <p>3 ans</p>
+                    <button class=" btn-en-savoir-plus text-lg px-6 py-3 w-full bg-green text-beige rounded shadow-lg hover:bg-darkgreen transition duration-300 ease-in-out transform hover:scale-105">En savoir plus</button>
+                </div>
+                <div class="flex flex-col justify-center items-center gap-2 bg-lightgreen p-5 card" data-search="M Mâle 10 ans">
+                    <img src="https://spcasaguenay.com/wp-content/uploads/2024/05/Gwendoline-800x800.jpg" alt="">
+                    <h3 class="text-2xl font-bold mt-4 card-title" data-search="Togepi">Togepi</h3>
+                    <p>Mâle</p>
+                    <p>10 ans</p>
+                    <button class=" btn-en-savoir-plus text-lg px-6 py-3 w-full bg-green text-beige rounded shadow-lg hover:bg-darkgreen transition duration-300 ease-in-out transform hover:scale-105">En savoir plus</button>
+                </div>
+                <div class="flex flex-col justify-center items-center gap-2 bg-lightgreen p-5 card" data-search="F Femelle 5 ans">
+                    <img src="https://spcasaguenay.com/wp-content/uploads/2024/06/koa-site-800x800.jpg" alt="">
+                    <h3 class="text-2xl font-bold mt-4 card-title" data-search="Maya">Maya</h3>
+                    <p>Femelle</p>
+                    <p>5 ans</p>
+                    <button class=" btn-en-savoir-plus text-lg px-6 py-3 w-full bg-green text-beige rounded shadow-lg hover:bg-darkgreen transition duration-300 ease-in-out transform hover:scale-105">En savoir plus</button>
+                </div>
+                <div class="flex flex-col justify-center items-center gap-2 bg-lightgreen p-5 card" data-search="F Femelle 4 mois">
+                    <img src="https://lespattesjaunes.com/wp-content/uploads/2024/06/swiffer-site-800x800-1.jpg" alt="">
+                    <h3 class="text-2xl font-bold mt-4 card-title" data-search="Lou">Lou</h3>
+                    <p>Femelle</p>
+                    <p>4 mois</p>
+                    <button class="btn-en-savoir-plus text-lg px-6 py-3 w-full bg-green text-beige rounded shadow-lg hover:bg-darkgreen transition duration-300 ease-in-out transform hover:scale-105">En savoir plus</button>
+                </div>
+                <div class="flex flex-col justify-center items-center gap-2 bg-lightgreen p-5 card" data-search="F Femelle 9 ans">
+                    <img src="https://spcasaguenay.com/wp-content/uploads/2024/07/raccoon-800x800.jpg" alt="">
+                    <h3 class="text-2xl font-bold mt-4 card-title" data-search="Eevee">Eevee</h3>
+                    <p>Femelle</p>
+                    <p>9 ans</p>
+                    <button class=" btn-en-savoir-plus text-lg px-6 py-3 w-full bg-green text-beige rounded shadow-lg hover:bg-darkgreen transition duration-300 ease-in-out transform hover:scale-105">En savoir plus</button>
+                </div>
+            </div>
+            <div id="overlay" class="fixed inset-0 bg-gray bg-opacity-80 hidden"></div>
+            <div id="modal" class="fixed inset-0 flex items-center justify-center hidden overflow-auto">
+                <div class="bg-beige p-8 rounded-lg w-[30rem] md:w-[30rem] lg:w-[60rem] xl:w-[80rem] relative shadow-lg">
+                    <button id="closeModalBtn" class="absolute top-0 right-0 m-4 p-2 text-6xl rounded-full hover:text-darkgreen">&times;</button>
+                    <div class="flex flex-col lg:flex-row">
+                        <img id="modalImage" src="" alt="Image du chien" class="mb-4 w-[400px] h-[400px] xl:w-[800px] xl:h-[800px] lg:mb-0 lg:mr-8">
+                        <div class="flex flex-col justify-between">
+                            <div>
+                                <h1 id="modalTitle" class="text-3xl font-bold mb-4"></h1>
+                                <p id="modalGender" class="text-lg mb-4"></p>
+                                <p id="modalAge" class="text-lg mb-4"></p>
+                                <p id="modalBreed" class="text-lg mb-4"></p>
+                                <p id="modalDescription" class="text-lg mb-4"></p>
+                                <p id="modalCompatibility" class="text-lg mb-4"></p>
+                            </div>
+                            <button id="adoptBtn" class="text-lg px-6 py-3 w-full bg-green text-beige rounded shadow-lg hover:bg-darkgreen transition duration-300 ease-in-out transform hover:scale-105">Adopter</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-green text-beige py-10 mt-[10rem]">
+        <div class="px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-5 gap-10">
+                <div class="flex flex-col items-center md:items-start">
+                    <img src="./assets/img/logo.png" alt="Logo" class="w-[300px] mb-4">
+                </div>
+                <div class="flex flex-col">
+                    <h3 class="text-lg font-semibold mb-4">Contact</h3>
+                    <p class="mb-2">Adresse: 123 Rue du Bouvier, Québec, Canada</p>
+                    <p class="mb-2">Téléphone: (123) 456-7890</p>
+                    <p>Email: <a href="mailto:contact@refugechien.com" class="hover:text-darkgreen">contact@refugechien.com</a></p>
+                </div>
+                <div class="flex flex-col">
+                    <h3 class="text-lg font-semibold mb-4">Menu</h3>
+                    <ul>
+                        <li class="mb-2"><a href="./index.html" class="hover:text-darkgreen">Accueil</a></li>
+                        <li class="mb-2"><a href="./chiens.html" class="hover:text-darkgreen">Chiens</a></li>
+                        <li class="mb-2"><a href="./apropos.html" class="hover:text-darkgreen">À propos</a></li>
+                        <li class="mb-2"><a href="./contact.html" class="hover:text-darkgreen">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="flex flex-col">
+                    <h3 class="text-lg font-semibold mb-4">Inscription à l'infolettre</h3>
+                    <form id="newsletter-form" class="flex flex-col">
+                        <input type="email" id="email" name="email" placeholder="Votre email" class="p-2 mb-4 text-gray rounded border border-gray-600 focus:outline-none focus:ring-2 focus:ring-gray">
+                        <button type="submit" class="bg-darkgreen text-beige py-2 rounded hover:bg-gray transition duration-300">S'inscrire</button>
+                    </form>
+                    <p id="confirmation-message" class="hidden mt-4 text-green-500">Merci pour votre inscription!</p>
+                </div>
+                <div class="flex flex-col items-center md:items-start">
+                    <h3 class="text-lg font-semibold mb-4">Suivez-nous</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="hover:text-darkgreen"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="hover:text-darkgreen"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="hover:text-darkgreen"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="hover:text-darkgreen"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t mt-10 pt-4 text-center">
+                <p class="text-gray-500">&copy; 2024 La Maison des Chiens. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
