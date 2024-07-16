@@ -5,24 +5,10 @@ export default {
   ],
   theme: {
     colors: {
-      gray: {
-        DEFAULT: '#545454',
-      },
-      beige: {
-        DEFAULT: '#FDFDFD',
-      },
-      green: {
-        DEFAULT: '#93a984',
-      },
-      darkgreen: {
-        DEFAULT: '#627754',
-      },
-      lightgray: {
-        DEFAULT: '#dddddd',
-      },
-      lightgreen: {
-        DEFAULT: '#ebefe9',
-      },
+      'purple': '#642eff',
+      'darkpurple': '#3730a3',
+      'white': '#FFFFFF'
+    },
     fontFamily: {
       'sans' : ['Poppins', 'sans-serif']
     },
